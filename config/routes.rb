@@ -1,7 +1,7 @@
 Test12::Application.routes.draw do
   get "static_pages/subscribe"
 
-  get "static_pages/confirm"
+  get "subscribers/new"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
