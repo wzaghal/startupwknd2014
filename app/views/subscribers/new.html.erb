@@ -104,7 +104,7 @@
             <div class="subscribe">
                 <div class="col-lg-6">
                     <h2>Subscribe:</h2>
-                    <% form_for @subscriber :url => {:action => "/my_action"}, :method => "post" do |f| %>
+                    <% form_for @subscriber do |f| %>
                     Email : <%= f.text_field :email, :class=> "form-control", :placeholder=>"myemail@email.com" %>
                     <%= submit_tag "Submit", :class=> "btn btn-default",:confirm => 'Your confirm message' %>
                     <% end %>
