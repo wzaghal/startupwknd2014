@@ -4,7 +4,7 @@ class SubscribersController < ApplicationController
 	end
 
 	def create
-		@subscriber = Subscriber.new(params [:subscriber])
+		@subscriber = Subscriber.new(params[:subscriber])
 		if @subscriber.save
 			redirect_to new_subscriber_path
 		end
