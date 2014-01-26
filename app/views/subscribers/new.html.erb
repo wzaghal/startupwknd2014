@@ -1,36 +1,11 @@
 
 <%= javascript_include_tag('jquery-1.10.2.js') %>
+<%= javascript_include_tag('bootstrap.js') %>
+ <%= stylesheet_link_tag 'font-awesome/css/font-awesome.min.css' %>
+ <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' %>
 
-    <script src="bootstrap.js"></script>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="http://startbootstrap.com">Start Bootstrap</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#about">About</a>
-                    </li>
-                    <li><a href="#services">Services</a>
-                    </li>
-                    <li><a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <div class="intro-header">
+ 
+   <div class="intro-header">
 
         <div class="container">
 
@@ -38,7 +13,7 @@
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>BuddyBench</h1>
-                        <h3>Mental Health for the win!</h3>
+                        <h3>Feeling alone? Join us on the BuddyBench</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li><a href="https://twitter.com/buddybenchco" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
@@ -64,12 +39,11 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Death tosck Photo:
-                        <br>Special Thanks</h2>
-                    <p class="lead">A special thanks to Death to the Stock Photo for providing the photographs that you see in this template. <a target="_blank" href="http://join.deathtsothestockphoto.com/">Visit their website</a> to become a member.</p>
+                    <h2 class="section-heading">Anonymous
+                    <p class="lead">Protect your identification</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/anon.png" alt="">
+                    <img class="img-responsive" src="../img/anonymous.png" alt="">
                 </div>
             </div>
 
@@ -87,12 +61,11 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">3D Device Mockups
-                        <br>by PSDCovers</h2>
-                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by PSDCovers! <a target="_blank" href="http://www.psdcovers.com/">Visit their website</a> to download some of their awesome, free photoshop actions!</p>
+                    <h2 class="section-heading">Quick & Easy
+                    <p class="lead">Instant online access <br> 27/4</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/time.png" alt="">
+                    <img class="img-responsive" src="../img/time.png" alt="">
                 </div>
             </div>
 
@@ -110,12 +83,11 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Google Web Fonts and
-                        <br>Font Awesome Icons</h2>
-                    <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+                    <h2 class="section-heading">Safe Place</h2>
+                    <p class="lead">No barriers to engagement</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/safe_place.png" alt="">
+                    <img class="img-responsive" src="../img/safe_place.png" alt="">
                 </div>
             </div>
 
@@ -132,13 +104,15 @@
             <div class="subscribe">
                 <div class="col-lg-6">
                     <h2>Subscribe:</h2>
+                    <%= form_for @subscriber do |f| %>
+                    Email : <%= f.text_field :email %>
+                    <%= f.submit%>
+            <% end -%>
                     <form class="navbar-form navbar-left" role="search">
-                        <form action="demo_form.asp" method="get">
                         <div class="form-group">
                         <input type="email" class="form-control" placeholder="myemail@email.com">
                         </div>
                         <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
                 </form>
                 </div>
                 
@@ -161,14 +135,5 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
 
 
-
-
-
-
-<%= form_for @subscriber do |f| -%>
-Email : <%= f.text_field :email %>
-<%= f.submit%>
-<% end -%>
