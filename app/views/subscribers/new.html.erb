@@ -40,7 +40,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Anonymous
-                    <p class="lead">Protect your identification</p>
+                    <p class="lead">Protect your identification <br><br> "Speak without fear" </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="../img/anonymous.png" alt="">
@@ -62,8 +62,8 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Quick & Easy
-                    <p class="lead">Instant online access <br> 27/4</p>
-                </div>
+                    <p class="lead">Instant online access <br> <br>"Striking balance in all aspects of life: social,physical, spiritual, academical & mental"</p>
+               </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="../img/time.png" alt="">
                 </div>
@@ -83,8 +83,8 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Safe Place</h2>
-                    <p class="lead">No barriers to engagement</p>
+                   <h2 class="section-heading">Safe Place
+                    <p class="lead">No barriers to engagement  <br><br>"Going against societal prejucide that prevent people in need from speaking up or seeking help"</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="../img/safe_place.png" alt="">
@@ -102,9 +102,11 @@
         <div class="container">
 
             <div class="subscribe">
+                <h2>Subscribe Now!:</h2>
                 <div class="col-lg-6">
-                    <h2>Subscribe:</h2>
-                    <% form_for @subscriber do |f| %>
+                    
+                    
+                    <%= form_for @subscriber do |f| %>
                     Email : <%= f.text_field :email, :class=> "form-control", :placeholder=>'myemail@email.com'%>
                     <%= button_tag "Submit", :class=> "btn btn-default" %>
                     <% end %>

@@ -110,6 +110,10 @@ width:750px;
 	
 }
 
+.col-lg-6 {
+	display: inline;
+}
+
 .banner h2 {
 	margin: 0;
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
