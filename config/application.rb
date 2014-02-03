@@ -56,8 +56,7 @@ module Test12
 
     # Enable the asset pipeline
     config.assets.enabled = true
-    config.assets.precompile += %w(jquery-1.10.2.js)
-    config.assets.precompile += %w(bootstrap.js)
+    config.assets.compile= true
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
   end
