@@ -1,5 +1,6 @@
 Test12::Application.routes.draw do
   root :to => 'subscribers#new'
+  match '/test' => 'subscribers#test'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
